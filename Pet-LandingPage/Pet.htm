@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Pet</title>
+        <style>
+            body {
+                width: 900px;
+                margin: 20px auto;
+                box-shadow: 1px 1px 15px 2px rgba(50, 50, 50, 0.3);
+                font-family: Helvetica;
+            }
+
+            header {
+                border: 1px solid red;
+                width: 100%;
+                height: auto;
+            }
+
+            #main_container {
+                border: 1px solid rgb(9, 241, 87);
+            }
+
+            #main_container .section1 {
+                display: flex;
+                border:1px solid indianred ;
+                height: 400px;
+            }
+
+            #main_container .section1 .profile {
+                width: 40%;
+                height: 80%;
+                margin-top: 25px;
+                margin-left: 25px;
+            }
+
+            #main_container .section1 .profile .profile_img {
+                border-radius: 100%;
+                overflow: hidden;
+                width: 350px;
+                height: 320px;
+                box-shadow: 1px 1px 25px 1px rgba(233, 163, 33, 0.8);
+            }
+
+            #main_container .section1 .menu_buttons {
+                width: 100px;
+                height:  80%;
+                margin-top: 25px;
+            }
+
+            #main_container .section1 .menu_buttons .indented_cat_buttons {
+                width: 150px;
+                height: 50px;
+                margin-left: -35px;
+                border-radius: 30px;
+                color: rgb(119, 60, 9);
+                font-size: larger;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: rgb(245, 193, 148);
+            }
+
+            #main_container .section1 .menu_buttons .middle_cat_buttons {
+                width: 150px;
+                height: 50px;
+                border-radius: 30px;
+                margin: 85px auto;
+                color: rgb(119, 60, 9);
+                font-size: larger;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: rgb(245, 193, 148);
+            }
+
+            #main_container .section1 .textbox {
+                border: 1px solid blue;
+                width: 350px;
+                height:  80%;
+                margin-top: 25px;
+                margin-left: 30px;
+            }
+
+            #main_container .text_content {
+                border:  1px solid indianred;
+            }
+        </style>
+    </head>
+    <body>
+        <header><h2>Welcome to my pet land page!</h2></header>
+
+        <div id="main_container">
+            <section class="section1">
+                <div class="profile">
+                    <div class="profile_img">
+                        <img src="pets/cat.jpg" alt="My Cat" width="360px" height="360px" />
+                    </div>
+                </div>
+                <div class="menu_buttons">
+                    <button class="indented_cat_buttons">Foods</button>
+                    <button class="middle_cat_buttons">House</button>
+                    <button class="indented_cat_buttons">Toys</button>
+                </div>
+                <div class="textbox">
+                    textboxes
+                </div>
+            </section>
+            <section class="text_content"></section>
+            <section class=""></section>
+
+
+        </div>
+        <script>
+            /*JavaScript Code here*/
+        </script>
+    </body>
+</html>
