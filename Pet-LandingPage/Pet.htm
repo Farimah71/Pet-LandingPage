@@ -8,22 +8,24 @@
                 margin: 20px auto;
                 box-shadow: 1px 1px 15px 2px rgba(50, 50, 50, 0.3);
                 font-family: Helvetica;
+                border-radius: 15px;
+                padding-top: 20px;
+
             }
 
             header {
-                border: 1px solid red;
                 width: 100%;
                 height: auto;
-            }
-
-            #main_container {
-                border: 1px solid rgb(9, 241, 87);
+                font-family: monospace;
+                text-transform: uppercase;
+                text-align: center;
+                text-shadow: 1px 1px 2px gray;
+                padding-bottom: 15px;
             }
 
             #main_container .section1 {
                 display: flex;
-                border:1px solid indianred ;
-                height: 400px;
+                height: 420px;
             }
 
             #main_container .section1 .profile {
@@ -48,13 +50,13 @@
             }
 
             #main_container .section1 .menu_buttons .indented_cat_buttons {
-                width: 150px;
-                height: 50px;
+                width: 120px;
+                height: 40px;
                 margin-left: -35px;
                 border-radius: 30px;
                 border-color: rgb(119, 60, 9);
                 color: rgb(119, 60, 9);
-                font-size: larger;
+                font-size: 16px;
                 font-weight: bold;
                 cursor: pointer;
                 background-color: rgb(245, 193, 148);
@@ -63,20 +65,20 @@
 
             #main_container .section1 .menu_buttons .indented_cat_buttons:hover {
                 width: 130px;
-                height: 50px;
-                font-size: 20px;
+                height: 40px;
+                color:coral;
                 transition: 0.5s;
             }
 
             #main_container .section1 .menu_buttons .middle_cat_buttons {
-                width: 150px;
-                height: 50px;
+                width: 120px;
+                height: 40px;
                 border-radius: 30px;
-                margin: 85px auto;
+                margin: 100px auto;
                 margin-left: 15px;
                 border-color: rgb(119, 60, 9);
                 color: rgb(119, 60, 9);
-                font-size: larger;
+                font-size: 16px;
                 font-weight: bold;
                 cursor: pointer;
                 background-color: rgb(245, 193, 148);
@@ -86,18 +88,57 @@
 
             #main_container .section1 .menu_buttons .middle_cat_buttons:hover {
                 width: 130px;
-                height: 50px;
-                font-size: 20px;
+                height: 40px;
+                color: coral;
                 transition: 0.5s;
             }
 
             #main_container .section1 .textbox {
-                border: 1px solid blue;
-                width: 350px;
-                height:  80%;
+                width: 330px;
+                height:  90%;
+                font-family: "apercu", sans-serif !important;
+                font-size: 17px;
                 margin-top: 25px;
-                margin-left: 30px;
+                margin-left: 60px;
             }
+
+            #main_container .section1 .textbox .infoText::before {
+                content:"";
+                background-image: url("pets/icons/Cat-icon.png");
+                background-size: 30px;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-bottom: -5px;               
+            }
+
+            #main_container .section1 .textbox .infoText {
+                margin-bottom: 50px;
+            }
+
+            #main_container .section1 .textbox .infoText a {
+                text-decoration: none;
+                padding: 7px;
+                position: relative;
+                left: 25%;
+                border-radius: 5px;
+                box-shadow: 2px 2px 3px 1px rgb(110, 110, 190);
+            }
+
+            #main_container .section1 .textbox .infoText a:hover {
+                box-shadow: 2px 2px 4px 2px rgb(72, 72, 129);
+            }
+
+            #main_container .section1 .textbox .infoText {
+                display: none;
+            }
+
+            #main_container .section1 .textbox .footprint {
+                padding-top: 80px;
+            }
+
 
             #main_container .text_content {
                 border:  1px solid indianred;
@@ -105,7 +146,10 @@
         </style>
     </head>
     <body>
-        <header><h2>Welcome to my pet land page!</h2></header>
+        <header>
+            <h2>Hello cat lovers!</h2><br />
+            <hr>
+        </header>
 
         <div id="main_container">
             <section class="section1">
@@ -120,7 +164,21 @@
                     <button class="indented_cat_buttons">Toys</button>
                 </div>
                 <div class="textbox">
-                    textboxes
+                    <div class="infoText foods">
+                            <span>You can visit different brands of cat foods by hitting this link:</span><br /><br />
+                            <a href="https://www.chewy.com/b/food-387">Delicious Foods</a>
+                    </div>
+                    <div class="infoText house">
+                        <span>You can order your cat's favourite house in this page:</span><br /><br />
+                        <a href="https://www.chewy.com/b/houses-1483">Fancy Houses</a>
+                    </div>
+                    <div class="infoText toys">
+                        <span>You can find cute toys for your lovely cat here:</span><br /><br />
+                        <a href="https://www.chewy.com/b/toys-326">Amusing Toys</a>
+                    </div>
+                    <div class="footprint">
+                        <img src="/pets/icons/footprint.png" width="100%" height="100%" />
+                    </div>
                 </div>
             </section>
             <section class="text_content"></section>
