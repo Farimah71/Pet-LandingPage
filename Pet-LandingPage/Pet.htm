@@ -13,7 +13,7 @@
 
             body {
                 width: 900px;
-                margin: 20px auto;
+                margin: 50px auto;
                 box-shadow: 1px 1px 15px 2px rgba(50, 50, 50, 0.3);
                 font-family: Helvetica;
                 border-radius: 15px;
@@ -201,6 +201,33 @@
                 margin-top: 30px;
             }
 
+            #main_container .footer {
+                position: relative;
+                height: 300px;
+                display: flex;
+            }
+
+            #main_container .footer img#multiple_cats {
+                position: relative;
+                top: 100px;
+            }
+
+            #main_container .footer img#dialogue {
+                position: relative;
+                left: -50px;
+                top: 10px;
+            }
+
+            #main_container .footer .foot_text {
+                position: absolute;
+                font-size: 19px;
+                font-style: italic;
+                font-weight: bold;
+                font-family: monospace;
+                left: 455px;
+                top: 70px;
+                transform: rotate(2deg);
+            }
 
         </style>
     </head>
@@ -236,7 +263,7 @@
                         <a href="https://www.chewy.com/b/toys-326">Amusing Toys</a>
                     </div>
                     <div id="footprint">
-                        <img src="/pets/icons/footprint.png" width="350px" height="100%" />
+                        <img src="/pets/icons/footprint.png" alt="Cat footprint" width="350px" height="100%" />
                     </div>
                 </div>
             </section>
@@ -252,9 +279,19 @@
                     </p>
                 </details>
 
-                <img id="cat_pic" src="/pets/catSleeping.jpg" width="200px" height="200px" />
+                <img id="cat_pic" src="/pets/catSleeping.jpg" alt="Cute Cat" width="200px" height="200px" />
             </section>
-            <section class=""></section>
+
+            <section class="footer">
+                <img id="multiple_cats" src="/pets/icons/someCats.png" alt="Multiple cats" width="450px" height="200px" />
+                <img id="dialogue" src="/pets/icons/dialogue.png" alt="Dialogue box" width="370px" height="250px" />
+                <div class="foot_text">
+                    <p>We cats love you humans!<br />
+                        Please take care of us...<br />
+                        Kitten ;-)
+                    </p>
+                </div>
+            </section>
 
 
         </div>
