@@ -3,6 +3,7 @@
     <head>
         <title>My Pet</title>
         <link rel="icon" href="/pets/icons/cat.png" type="image/x-icon">
+        
         <style>
             @keyframes shake {
                 0% {margin-left: 0;}
@@ -24,11 +25,13 @@
             header {                
                 width: 100%;
                 height: auto;
-                font-family: monospace;
+                font-family:cursive;
+                font-size: 2vw;
                 text-transform: uppercase;
                 text-align: center;
-                text-shadow: 1px 1px 2px gray;
-                padding-bottom: 15px;
+                text-shadow: 3px 3px 2px gray;
+                margin-top: -25px;
+                line-height: 5px;
             }
 
             #main_container .section1 {
@@ -142,7 +145,7 @@
 
             #main_container .section1 .textbox #footprint {
                 position: absolute;
-                top: 230px;
+                top: 330px;
                 transition: 0.5s;
             }
 
@@ -229,11 +232,12 @@
                 top: 70px;
                 transform: rotate(2deg);
             }
-
+            
         </style>
     </head>
     <body>
         <header>
+            <img src="/pets/icons/minimal-full-body.png" alt="Cat" width="90px" height="100px" />
             <h2>Hello cat lovers!</h2><br />
             <hr>
         </header>
@@ -293,9 +297,9 @@
                     </p>
                 </div>
             </section>
-
-
         </div>
+
+
         <script>
             function btnClick(This){
                 document.getElementById("footprint").style.display = "none";
