@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>My Pet</title>
-    <link rel="icon" href="/img/icons/cat.png" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
-</head>
+    <link rel="icon" href="/img/icons/cat.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="/img/icons/minimal-full-body.png" alt="Cat" width="90px" height="100px" />
-        <h2>Hello cat lovers!</h2><br />
-        <hr>
+      <img src="/img/icons/minimal-full-body.png" alt="Cat" />
+      <h2>Hello cat lovers!</h2>
+      <br />
+      <hr />
     </header>
 
     <div id="main_container">
-        <section class="section1">
-            <div class="profile">
-                <div class="profile_img">
-                    <img src="img/cat.jpg" alt="My Cat" width="360px" height="360px" />
-                </div>
-            </div>
-            <div class="menu_buttons">
-                <button class="indented_cat_buttons foodBtn" onclick="btnClick(this)">Foods</button>
-                <button class="middle_cat_buttons houseBtn" onclick="btnClick(this)">House</button>
-                <button class="indented_cat_buttons toyBtn" onclick="btnClick(this)">Toys</button>
-            </div>
-            <div class="textbox">
-                <div class="infoText foods">
-                    <span>You can visit different brands of cat foods by hitting this link:</span><br /><br />
-                    <a href="https://www.chewy.com/b/food-387">Delicious Foods</a>
-                </div>
-                <div class="infoText house">
-                    <span>You can order your cat's favourite house in this page:</span><br /><br />
-                    <a href="https://www.chewy.com/b/houses-1483">Fancy Houses</a>
-                </div>
-                <div class="infoText toys">
-                    <span>You can find cute toys for your lovely cat here:</span><br /><br />
-                    <a href="https://www.chewy.com/b/toys-326">Amusing Toys</a>
-                </div>
-                <div id="footprint">
-                    <img src="/img/icons/footprint.png" alt="Cat footprint" width="350px" height="100%" />
-                </div>
-            </div>
-        </section>
+      <section class="section1">
+        <div class="profile">
+          <div class="profile_img">
+            <img src="img/cat.jpg" alt="My Cat" width="360px" height="360px" />
+          </div>
+        </div>
+        <div class="menu_buttons">
+          <button class="indented_cat_buttons foodBtn" onclick="btnClick(this)">
+            Foods
+          </button>
+          <button class="middle_cat_buttons houseBtn" onclick="btnClick(this)">
+            House
+          </button>
+          <button class="indented_cat_buttons toyBtn" onclick="btnClick(this)">
+            Toys
+          </button>
+        </div>
+        <div class="textbox">
+          <div class="infoText foods">
+            <span
+              >You can visit different brands of cat foods by hitting this
+              link:</span
+            ><br /><br />
+            <a href="https://www.chewy.com/b/food-387">Delicious Foods</a>
+          </div>
+          <div class="infoText house">
+            <span>You can order your cat's favourite house in this page:</span
+            ><br /><br />
+            <a href="https://www.chewy.com/b/houses-1483">Fancy Houses</a>
+          </div>
+          <div class="infoText toys">
+            <span>You can find cute toys for your lovely cat here:</span
+            ><br /><br />
+            <a href="https://www.chewy.com/b/toys-326">Amusing Toys</a>
+          </div>
+          <div id="footprint">
+            <img src="/img/icons/footprint.png" alt="Cat footprint" />
+          </div>
+        </div>
+      </section>
 
-        <section class="section2">
-            <img id="hand" src="/img/icons/hand.png" width="50px" height="50px" />
+      <section class="section2">
+        <img id="hand" src="/img/icons/hand.png" width="70px" height="70px" />
 
-            <details>
-                <summary>Can cats stay in the house all day?</summary>
-                <p>Cats can become frustrated and bored with indoor-only lifestyles. Make plenty of time to interact -
-                    as
-                    your cat won't have the freedom to interact with people/other animals outside, you'll be their main
-                    companion.
-                    Don't leave them alone too much - you shouldn't leave cats alone for long periods during the day.
-                </p>
-            </details>
+        <details>
+          <summary>Can cats stay in the house all day?</summary>
+          <p>
+            Cats can become frustrated and bored with indoor-only lifestyles.
+            Make plenty of time to interact - as your cat won't have the freedom
+            to interact with people/other animals outside, you'll be their main
+            companion. Don't leave them alone too much - you shouldn't leave
+            cats alone for long periods during the day.
+          </p>
+        </details>
 
-            <img id="cat_pic" src="/img/catSleeping.jpg" alt="Cute Cat" width="200px" height="200px" />
-        </section>
+        <img id="cat_pic" src="/img/catSleeping.jpg" alt="Cute Cat" />
+      </section>
 
-        <section class="footer">
-            <img id="multiple_cats" src="/img/icons/someCats.png" alt="Multiple cats" width="450px" height="200px" />
-            <img id="dialogue" src="/img/icons/dialogue.png" alt="Dialogue box" width="370px" height="250px" />
-            <div class="foot_text">
-                <p>We cats love you humans!<br />
-                    Please take care of us...<br />
-                    Kitten ;-)
-                </p>
-            </div>
-        </section>
+      <section class="footer">
+        <img
+          id="multiple_cats"
+          src="/img/icons/someCats.png"
+          alt="Multiple cats"
+          width="450px"
+          height="200px"
+        />
+        <div class="dialogue">
+          <img id="dialogue" src="/img/icons/dialogue.png" alt="Dialogue box" />
+          <div class="foot_text">
+            <p>
+              We cats love you humans!<br />
+              Please take care of us...<br />
+              Kitten ;-)
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
 
-
     <script src="/script.js"></script>
-
-</body>
-
+  </body>
 </html>
